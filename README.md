@@ -30,7 +30,7 @@ When the application exits, unless `NEVER_KILL_ISTIO_ON_FAILURE` or `NEVER_KILL_
 ```dockerfile
 FROM python:latest
 # Below command makes scuttle available in path
-COPY --from=kvij/scuttle:latest /scuttle /bin/scuttle
+COPY --from=klilleby/scuttle:latest /scuttle /bin/scuttle
 WORKDIR /app
 COPY /app/ ./
 ENTRYPOINT ["scuttle", "python", "-m", "my_app"]

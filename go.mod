@@ -1,4 +1,4 @@
-module github.com/kvij/scuttle
+module github.com/klilleby/scuttle
 
 go 1.23
 
