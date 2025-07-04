@@ -68,8 +68,8 @@ jobs:
             VERSION=${{ steps.get_version.outputs.VERSION }}
             GO_VERSION=${{ env.GO_VERSION }}
           tags: |
-            kvij/scuttle:latest
-            kvij/scuttle:${{ steps.get_version.outputs.VERSION }}
+            klilleby/scuttle:latest
+            klilleby/scuttle:${{ steps.get_version.outputs.VERSION }}
       # On tag, Create GitHub Release
       - name: Release
         uses: softprops/action-gh-release@v2
